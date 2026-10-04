@@ -1,0 +1,81 @@
+1. Top 10 aisles with the highest number of products
+
+Insight: Aisle 100 has the highest number of products with 1,254 products, followed by aisle 45 with 1,235 products and aisle 37 with 1,084 products. This shows that product variety is concentrated in a few large aisles.
+
+2. Number of unique departments
+
+Insight: The dataset contains 21 unique departments, showing that the product catalog covers a wide range of grocery categories.
+
+3. Distribution of products across departments
+
+Insight: Product distribution varies considerably across departments. Among the visible results, Department 7 has 4,324 products, followed by Department 1 with 3,982 products, while Department 2 has 543 products. This indicates that some departments have substantially broader product catalogs than others.
+
+4. Top 10 products with the highest reorder rates
+
+Insight: Several products have a 100% reorder rate, meaning every recorded order for those products was marked as a reorder. However, some of these products have very few total orders, so reorder rate should be considered together with order volume when evaluating repeat demand.
+
+5. Number of unique users who placed orders
+
+Insight: The original query returned 1,048,575, but this represents unique orders, not unique users. For the question asked, the query should use COUNT(DISTINCT user_id). The corrected result should therefore be used in the final project.
+
+6. Average number of days between orders
+
+Insight: The average time between orders varies across users. In the displayed results, the interval ranges from 9 to 18 days, showing that customers have different purchasing frequencies.
+
+7. Peak hours of order placement
+
+Insight: Order activity is concentrated during the daytime. 10 AM has the highest visible order frequency with 88,228 orders, followed by 11 AM with 87,087 orders. This indicates strong customer activity during late morning and afternoon hours.
+
+8. Order volume by day of the week
+
+Insight: Sunday has the highest order volume with 183,939 orders, followed by Monday with 180,025 orders. Thursday has the lowest volume at 130,367 orders, showing noticeable differences in ordering activity throughout the week.
+
+9. Top 10 most ordered products
+
+Insight: Banana is the most ordered product with 14,136 orders, followed by Bag of Organic Bananas with 11,639 orders and Organic Strawberries with 8,233 orders. Fresh fruits and other produce products dominate the top 10, indicating strong demand for commonly purchased grocery items.
+
+10. Users who placed orders in each department
+
+Insight: Department 4 has the highest number of users at 22,303, followed by Department 16 with 20,153 and Department 7 with 14,024. Department 10 has the lowest value at 323 users. This shows that customer participation varies substantially between departments.
+
+11. Average number of products per order
+
+Insight: Customers purchase an average of 10.53 products per order, indicating that orders generally contain multiple products rather than being limited to single-item purchases.
+
+12. Most reordered products in each department
+
+Insight: The results show strong repeat-purchase activity, particularly in the Produce department. Product 24852 has 12,461 reorders, followed by product 13176 with 10,053 and product 21137 with 6,506 in the visible results. This demonstrates strong repeat demand for selected products.
+
+⚠️ For the exact wording "most reordered product in each department", the corrected ROW_NUMBER() query should be used because your current output is sorted by reorder count but doesn't isolate one product per department.
+
+13. Products reordered more than once
+
+Insight: A total of 20,085 products were reordered more than once. This demonstrates substantial repeat-purchase behavior across the product catalog.
+
+14. Average number of products added to cart per order
+
+Insight: Customers add an average of 10.53 products per order. This indicates that customers generally purchase multiple products during each shopping session.
+
+15. Number of orders by hour
+
+Insight: Order volume is highest during the late morning and afternoon. The peak occurs at 10 AM with 88,228 orders, while order activity decreases significantly during the evening and reaches its lowest level at 11 PM with 12,112 orders.
+
+16. Distribution of order sizes
+
+Insight: Medium-sized orders are particularly common. Orders containing 5 products are the most frequent among the displayed results, with 6,791 orders, followed by 6-product orders with 6,632. Order frequency generally decreases as order size becomes larger.
+
+17. Average reorder rate by aisle
+
+Insight: Milk has the highest average reorder rate at 79.23%, followed by water/seltzer sparkling water at 73.79% and fresh fruits at 73.53%. Everyday consumables such as milk, eggs, yogurt and bread show strong repeat-purchase behavior.
+
+18. Average order size by day of the week
+
+Insight: Sunday has the highest average order size at 11.72 products, followed by Saturday at 11.03. Wednesday has the lowest average order size at 9.67 products. Customers therefore tend to place relatively larger orders toward the weekend.
+
+19. Top 10 users with the highest number of orders
+
+Insight: All 10 users shown in the result have placed 100 orders each, representing the highest order count in the result. This identifies a group of highly active customers with frequent purchasing behavior.
+
+20. Products by aisle and department
+
+Insight: The product catalog is distributed across numerous aisles and departments. Among the visible results, Ice Cream Ice Cream has 1,084 products, Frozen Meals has 880, and Packaged Vegetables/Fruits has 611. This demonstrates considerable product variety across Frozen, Produce, Bakery and other departments.
